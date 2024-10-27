@@ -11,7 +11,8 @@ Now, open the terminal in the folder and run this command<br>
 This will compile the program under the "build" folder.
 
 # How to add a program icon
-Change the executables line to this:
+Change the executables line to this:<br>
+Note: If you want to enable the debug console, set base="Console"
 <pre>executables = [Executable("python_file_name.py", base=base, icon="favicon.ico")]</pre>
 After that, add the same "favicon.ico" in the same line as "include_files" so that it is like
 <pre>"include_files": ["favicon.ico"],</pre>
