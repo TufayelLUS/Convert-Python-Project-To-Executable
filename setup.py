@@ -8,10 +8,11 @@ if sys.platform == "win32":
 # set the name of the python script below
 executables = [Executable("python_file_name.py", base=base)]
 # if you want to show the console, use the line below instead and comment out the line above
-# executables = [Executable("python_file_name.py")]
+# executables = [Executable("python_file_name.py", base="Console")]
 
 options = {
     "build_exe": {
+        "optimize": 2, # set level of optimization 0-2
         "packages": [],  # List of packages to include
         "include_files": [],  # List of additional files to include
     },
