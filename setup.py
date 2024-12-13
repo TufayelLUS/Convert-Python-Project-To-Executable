@@ -1,6 +1,8 @@
 import sys
 from cx_Freeze import setup, Executable
 
+# pip install cx_freeze==7.2.4
+
 base = None
 
 if sys.platform == "win32":
@@ -15,6 +17,7 @@ options = {
         "optimize": 2, # set level of optimization 0-2
         "packages": [],  # List of packages to include
         "include_files": [],  # List of additional files to include
+        "excludes": [] # List of packages to exclude
     },
 }
 
